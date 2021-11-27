@@ -34,6 +34,11 @@
   transition: 0.4s;
 }
 
+.skills__notArrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
 .skills__titles {
   display: flex;
   justify-content: space-between;
@@ -94,10 +99,10 @@
 }
 
 .skills__open .skills__list {
-  height: max-content;
+  /* height: max-content; */
   margin-bottom: var(--mb-2-5);
 }
 
-.skills__open .skills__arrow {
+.skills__arrow {
   transform: rotate(-180deg);
 }
