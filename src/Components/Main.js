@@ -3,6 +3,7 @@ import Home from "./Home.js";
 import About from "./About.js";
 import Skills from "./Skills.js";
 import Qualification from "./Qualification.js";
+import Services from "./Services.js";
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
       <About />
       <Skills />
       <Qualification />
+      <Services />
     </main>
   );
 }
