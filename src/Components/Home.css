@@ -1,3 +1,23 @@
+.home {
+  background-color: #5935e1;
+  height: 100vh;
+}
+
+.home__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: #fed9da;
+  /* z-index: 10; */
+  z-index: var(--z-fixed);
+  display: flex;
+  justify-content: center;
+  /* mix-blend-mode: difference; */
+  /* align-items: center; */
+}
+
 .home__containner {
   gap: 1rem;
 }
@@ -6,13 +26,14 @@
   grid-template-columns: 0.5fr 3fr;
   padding-top: 3.5rem;
   align-items: center;
+  /* z-index: 1; */
 }
 
-.home__social {
+/* .home__social {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
-}
+} */
 
 .home__social-icon {
   font-size: 1.25rem;
@@ -34,21 +55,46 @@
 
 .home__data {
   grid-column: 1/3;
+  z-index: var(--z-fixed);
+  /* z-index: var(--z-modal); */
+  /* mix-blend-mode: difference; */
+  text-align: center;
+  /* z-index: 1; */
+  /* position: absolute; */
+  /* background-color: burlywood; */
+  /* font-family: "IntergralCF"; */
+  /* color: white; */
 }
+
+/* .home__heading {
+  z-index: var(--z-modal);
+} */
 
 .home__title {
   font-size: var(--big-font-size);
+  /* color: #fed9da; */
+  /* color: #5935e1; */
+  /* z-index: var(--z-fixed); */
+  color: #fff;
+  mix-blend-mode: difference;
+  /* mix-blend-mode: normal; */
 }
 
 .home__subtitle {
-  font-size: var(--h3-font-size);
-  color: var(--text-color);
+  /* font-size: var(--h3-font-size); */
+  font-size: var(--h1-font-size);
+  /* z-index: var(--z-fixed); */
+  /* color: var(--text-color); */
+  color: #f5f2fd;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
 
 .home__description {
   margin-bottom: var(--mb-2);
+  margin-top: var(--mb-2);
+  color: white;
+  font-size: 16px;
 }
 
 .home__scroll {
@@ -75,6 +121,12 @@
   margin-right: var(--mb-0-25);
 }
 
+.home__img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+}
+
 /* .home__scroll-arrow {
   font-size: 1.25rem;
 } */
@@ -84,6 +136,8 @@
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
+  /* background-color: #fed9da;
+  color: #5935e1; */
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
@@ -116,4 +170,27 @@
 .button--link:hover {
   background-color: transparent;
   color: var(--first-color-alt);
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    height: 150vh;
+  }
+
+  .home__container {
+    row-gap: 5rem;
+  }
+
+  .home__content {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+
+  .home__scroll {
+    display: block;
+  }
+
+  .home__scroll--button {
+    margin-left: 3rem;
+  }
 }

@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-  --header-height: ;
+  --header-height: 2.5rem;
 
   /*========== Colors ==========*/
   /* Change favorite color */
@@ -15,14 +15,21 @@
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
+  --nav-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
+  --nav-back-color: hsl(var(--hue-color), 60%, 99%);
+  --nav-option-color: var(--first-color);
+  /* --nav-option-color: #976be9; */
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
+
+  /*==================== OTHER FONTS ====================*/
+  /* --intergralCF-font: "IntegralCF", sans-serif; */
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -82,8 +89,13 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
   color: var(--text-color);
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  flex: 1; */
+  /* background-color: yellow; */
 }
 
 h1,
@@ -110,6 +122,8 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  /* height: 100%; */
+  /* background-color: yellow; */
 }
 
 .section__title {
@@ -125,4 +139,118 @@ img {
 .section__title,
 .section__subtitle {
   text-align: center;
+}
+
+.intergralCF__font {
+  /* font-family: var(--intergralCF-font);
+  src: url("./fonts/Webfont/IntegralCF-ExtraBold.woff2"); */
+  font-family: IntegralCF;
+  /* background-color: yellow; */
+  /* font-weight: 900; */
+}
+
+/*==================== Media Queries ====================*/
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav__menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav__list {
+    column-gap: 0;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification__data {
+    gap: 0.5rem;
+  }
+
+  .services__container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .services__content {
+    padding-right: 3.5rem;
+  }
+}
+
+/* For medium devices */
+
+@media screen and (min-width: 568px) {
+  /* .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home__data {
+    grid-column: initial;
+  }
+
+  .home {
+    background-color: white;
+    height: 50vh;
+  } */
+
+  .about__container,
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qualification__container {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+
+  .projects__div {
+    justify-content: center;
+  }
+
+  .projects__content {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 6rem 0 2rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  /* .header {
+    top: 0px;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 1rem;
+  } */
+
+  /* .nav{
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  } */
 }
