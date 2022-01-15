@@ -1,6 +1,6 @@
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  /* max-width: 1024px; */
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -26,12 +26,13 @@
 
 /*==================== NAV ====================*/
 .nav {
-  max-width: 968px;
+  /* max-width: 968px; */
   /* width: 100%; */
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: yellow; */
 }
 
 /* .nav__logo {

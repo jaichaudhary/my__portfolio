@@ -231,7 +231,7 @@ function Home() {
           display: "flex",
           flexDirection: "column",
           // justifyContent: "space-evenly",
-          height: "90vh",
+          // height: "90vh",
         }}
       >
         <div
@@ -308,20 +308,20 @@ function Home() {
             </div>
 
             {/*<Blob />*/}
-            <div>
+            <div className="home__imgDiv">
               {/* <UserSvgImg className="home__blob" /> */}
               <img src="./img/home.svg" alt="" className="home__img" />
             </div>
           </div>
         </div>
 
-        <div className="home__scroll">
+        {/* <div className="home__scroll">
           <a href="#about" className="home__scroll--button button--flex">
             <UilMouseAlt size="2rem" className="home__scroll-mouse" />
             <span className="home__scroll-name">Scroll down</span>
             <UilArrowDown size="1.25rem" className="home__scroll-arrow" />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
