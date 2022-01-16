@@ -7,6 +7,7 @@ function App() {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
+    // initialInView: true,
   });
   return (
     <div className="App">
