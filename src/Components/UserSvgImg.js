@@ -78,8 +78,8 @@ function UserSvgImg() {
           r="25"
           fill="none"
           stroke="#d0cde1"
-          stroke-miterlimit="10"
-          stroke-width="2"
+          strokeMiterlimit="10"
+          strokeWidth="2"
         />
         <circle cx="415.50024" cy="493.32605" r="25" fill="#d0cde1" />
         <rect

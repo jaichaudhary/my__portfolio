@@ -15,8 +15,9 @@ function Skills() {
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">My technical level</span>
 
-      <div className="skills__container container grid">
-        <div>
+      <div className="skills__wrapper">
+        <div className="skills__container container grid">
+          {/* <div> */}
           {/*=====================Skills 1======================*/}
           <div className="skills__content skills__open">
             <div
@@ -167,6 +168,7 @@ function Skills() {
               </div>
             )}
           </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

@@ -106,3 +106,8 @@
 .skills__arrow {
   transform: rotate(-180deg);
 }
+
+.skills__wrapper {
+  display: flex;
+  justify-content: center;
+}

@@ -20,12 +20,14 @@ function NavbarList(props) {
             props.setIsNavToggle(!props.isNavToggle);
           }}
         >
-          {props.navLink__id === "#home" && <UilEstate />}
-          {props.navLink__id === "#about" && <UilUser />}
-          {props.navLink__id === "#skills" && <UilFileAlt />}
-          {props.navLink__id === "#services" && <UilBriefcaseAlt />}
-          {props.navLink__id === "#portfolio" && <UilScenery />}
-          {props.navLink__id === "#contact" && <UilMessage />}
+          <div className="nav__icon">
+            {props.navLink__id === "#home" && <UilEstate />}
+            {props.navLink__id === "#about" && <UilUser />}
+            {props.navLink__id === "#skills" && <UilFileAlt />}
+            {props.navLink__id === "#services" && <UilBriefcaseAlt />}
+            {props.navLink__id === "#portfolio" && <UilScenery />}
+            {props.navLink__id === "#contact" && <UilMessage />}
+          </div>
           {props.navLink__name}
         </a>
       </li>
@@ -33,8 +35,9 @@ function NavbarList(props) {
   );
 }
 
-function Navbar() {
+function Navbar({ inView }) {
   const [isNavToggle, setIsNavToggle] = useState(false);
+  const color = "white";
   // const [isNavLink , setIsNavLink] = useState(false);
 
   const handleClick = () => {
@@ -63,7 +66,18 @@ function Navbar() {
   const iteration = [0, 1, 2, 3, 4, 5];
 
   return (
-    <header className="header" id="header">
+    <header
+      style={{
+        "--nav-color": inView && color,
+        "--nav-back-color": inView && "#5935e1",
+
+        //not dynamic
+        "--nav-option-color": !inView && "yellow",
+        // "--nav-option-color": !inView && "white",
+      }}
+      className="header"
+      id="header"
+    >
       <nav className="nav container">
         <a href="#jai" className="nav__logo">
           Jai

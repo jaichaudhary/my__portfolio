@@ -41,3 +41,36 @@
   display: flex;
   justify-content: center;
 }
+
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about__data {
+  max-width: 400px;
+}
+
+/* @media screen and (min-width: 768px) {
+  .about__container {
+    column-gap: 5rem;
+  }
+  .about__img {
+    width: 350px;
+  }
+  .about__description {
+    text-align: initial;
+  }
+  .about__info {
+    justify-content: space-between;
+  }
+  .about__buttons {
+    justify-content: initial;
+  }
+} */
+
+/* @media screen and (min-width: 1024px) {
+  .about__container {
+    background-color: yellow;
+  }
+} */

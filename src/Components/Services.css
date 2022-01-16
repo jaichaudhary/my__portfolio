@@ -43,3 +43,22 @@
 .services__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
+
+@media screen and (min-width: 768px) {
+  .services__container {
+    grid-template-columns: repeat(3, 218px);
+    justify-content: center;
+  }
+
+  .services__icon {
+    font-size: 2rem;
+  }
+
+  .services__content {
+    padding: 6rem 0 2rem 2.5rem;
+  }
+
+  .services__modal-content {
+    width: 450px;
+  }
+}
