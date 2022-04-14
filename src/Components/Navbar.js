@@ -72,7 +72,7 @@ function Navbar({ inView }) {
         "--nav-back-color": inView && "#5935e1",
 
         //not dynamic
-        "--nav-option-color": !inView && "yellow",
+        "--nav-option-color": !inView && "white",
         // "--nav-option-color": !inView && "white",
       }}
       className="header"

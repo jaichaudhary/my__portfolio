@@ -11,7 +11,7 @@ function About() {
       <div className="about__wrapper">
         <div className="about__container container grid">
           <div className="about__img-parent">
-            <img src="./img/about.svg" alt="" className="about__img" />
+            <img src="./img/about3D.svg" alt="" className="about__img" />
           </div>
 
           <div className="about__data">
