@@ -11,6 +11,25 @@ export default function Projects() {
         "The project includes search functionality in which one can search any keyword just like youtube and get the output.",
       skills: ["HTML", "CSS", "JavaScript", "React", "YouTube API"],
       image: "youtube__image",
+      githubUrl: "https://github.com/jaichaudhary/Youtube-clone",
+      url: "https://jaichaudhary.github.io/Youtube-clone/",
+    },
+    {
+      title: "Ethereum_ERC20",
+      description: `In this project, you create your own token and you can check the balance or transfer it into your different accounts. You can also import existing tokens and transfer or check the balance if you are an owner of that token.`,
+      skills: ["Hardhat", "Solidity", "web3.js", "React", "Material UI"],
+      image: "create__ether",
+      githubUrl: "https://github.com/jaichaudhary/erc20_project",
+      url: "https://erc20-project.vercel.app/",
+    },
+    {
+      title: "Excel_file Reader",
+      description: `- In this project, we can add an excel file, the heading of excel will come on the left and we can drag & drop the heading one by one and you will be able to see the table of those dragged headings.
+        - Chart is also included but you have to use "Test excel file" for that that is included in "readme.md" file in Github repo.`,
+      skills: ["HTML", "CSS", "JavaScript", "React", "ChartJS", "Drag & Drop"],
+      image: "excelFile__reader",
+      githubUrl: "https://github.com/jaichaudhary/excel-fileReader",
+      url: "https://excel-file-reader.vercel.app/",
     },
     {
       title: "Airbnb Clone",
@@ -18,6 +37,8 @@ export default function Projects() {
         "The Project includes Date Picker and how many person to stay functionality, and once you click on Done, then you are redirected to the search page.",
       skills: ["HTML", "CSS", "JavaScript", "React", "React Router"],
       image: "airbnb__image",
+      githubUrl: "https://github.com/jaichaudhary/Airbnb-clone",
+      url: "https://airbnb-clone-inky.vercel.app/",
     },
     {
       title: "Search Pic",
@@ -25,10 +46,39 @@ export default function Projects() {
         "The Project includes the functionality of image search when we type anything in the search bar and we can also view them in a modal when we click on the image, and it also has a functionality of showing recent searches.",
       skills: ["HTML", "CSS", "JavaScript", "React", "Flickr API"],
       image: "search__pic",
+      githubUrl: "https://github.com/jaichaudhary/search-pic",
+      url: "http://boringstudy.me/search-pic/",
+    },
+    {
+      title: "Homejam CLone",
+      description:
+        "This project is the clone of myhomejam.com Homepage, User Interface is fully responsive.",
+      skills: ["HTML", "CSS", "JavaScript", "React"],
+      image: "homejam__image",
+      githubUrl: "https://github.com/jaichaudhary/homejam-react",
+      url: "https://jaichaudhary.github.io/homejam-react",
+    },
+    {
+      title: "Poll Survey UI",
+      description:
+        "TThis project shows the user interface of Polls, Surveys, Quiz inside a website.",
+      skills: ["HTML", "CSS", "JavaScript"],
+      image: "pollSurvey__image",
+      githubUrl: "https://github.com/jaichaudhary/poll-react",
+      url: "https://jaichaudhary.github.io/poll-react/",
+    },
+    {
+      title: "Boring Study",
+      description:
+        "This project primarily focuses on the availability of the previous year's question papers and answers for the students of B.Tech and Diploma.",
+      skills: ["HTML", "CSS", "JavaScript"],
+      image: "boringStudy__image",
+      githubUrl: "https://github.com/jaichaudhary/boringstudy",
+      url: "https://boringstudy.vercel.app/",
     },
   ];
   return (
-    <section className="projects section" id="projects">
+    <section className="projects section" id="portfolio">
       <h2 className="section__title">Some Things I’ve Built</h2>
       <span className="section__subtitle">What i offer</span>
       <div className="projects__div">
@@ -88,10 +138,20 @@ export default function Projects() {
                 </div>
 
                 <div className="projects__link">
-                  <div className="projects__linkTab">
+                  <div
+                    onClick={() => {
+                      window.open(item.githubUrl, "_blank");
+                    }}
+                    className="projects__linkTab"
+                  >
                     <UilGithubAlt />
                   </div>
-                  <div className="projects__linkTab">
+                  <div
+                    onClick={() => {
+                      window.open(item.url, "_blank");
+                    }}
+                    className="projects__linkTab"
+                  >
                     <UilExternalLinkAlt />
                   </div>
                 </div>

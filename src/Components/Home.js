@@ -43,6 +43,7 @@ import { useSpring, animated, config } from "react-spring";
 function Home() {
   const height = window.innerHeight;
   const [open, setOpen] = useState(true);
+  const [overlay, setOverlay] = useState(true);
   const [props, api] = useSpring(() => ({
     // reverse: true,
     // pause: open,
@@ -108,52 +109,51 @@ function Home() {
     };
   }, []);
 
-  // setTimeout(() => {
-  //   // console.log("open", open);
-  //   // setOpen(false);
-  //   api.start({
-  //     reverse: true,
-  //     immediate: false,
-  //     config: config.molasses,
-  //     to: { height: "100vh" },
-  //     from: { height: "0vh" },
-  //   });
-  // }, 2000);
-
+  const hgt = "0vh";
   setTimeout(() => {
-    console.log("open", open);
-    setOpen(false);
-  }, 4500);
+    setOverlay(false);
+  }, 2000);
+
+  // setTimeout(() => {
+  //   console.log("open", open);
+  //   setOpen(false);
+  // }, 4500);
   return (
     <section style={{ flex: 1 }} className="home section" id="home">
       {open && (
-        <animated.div
-          style={Object.assign({ overflow: "hidden" }, props)}
-          className="home__overlay"
-        >
-          {/* <animated.h1
-            style={Object.assign({
-              marginTop: height / 2,
-              zIndex: 100,
-              position: "fixed",
-              mixBlendMode: "difference",
-              color: "hsl(250, 69%, 61%)",
-            })}
-            className="home__title"
-          >
-            Hello
-          </animated.h1> */}
-        </animated.div>
-      )}
-      {/* <Trail open={open}>
-        <div className="home__overlay">
-          <h1 className="home__title">Hello</h1>
+        // <animated.div
+        //   style={Object.assign({ overflow: "hidden" }, props)}
+        //   className="home__overlay"
+        // ></animated.div>
+        <div style={{ height: !overlay && hgt }} className="home__overlay">
+          <div className="home__data">
+            <div className="home__heading">
+              <h1
+                style={{ opacity: !overlay && 0 }}
+                className="home__overlayTitle intergralCF__font"
+              >
+                {`Hi, I'm Jai`.toUpperCase()}
+              </h1>
+              <h3
+                style={{ opacity: !overlay && 0 }}
+                className="home__overlaySubtitle intergralCF__font"
+              >
+                {`Frontend developer`.toUpperCase()}
+              </h3>
+            </div>
+            <p
+              style={{ opacity: !overlay && 0 }}
+              className="home__overlayDescription"
+            >
+              Experience in web design and development knowledge, producing
+              quality work.
+            </p>
+          </div>
         </div>
-      </Trail> */}
+      )}
 
       <div
         style={{
-          // backgroundColor: "yellow",
           position: "absolute",
           height: "80vh",
           width: "100vw",
@@ -161,7 +161,6 @@ function Home() {
           flexDirection: "column",
           justifyContent: "space-evenly",
           overflow: "hidden",
-          // zIndex: 0,
         }}
       >
         <div
@@ -188,9 +187,6 @@ function Home() {
           >
             <UilJavaScript size={90} color={"#fed9da"} />
           </animated.div>
-          {/* <div style={{ mixBlendMode: "soft-light" }}>
-            <UilJavaScript size={60} color={"#fed9da"} />
-          </div> */}
         </div>
         <div
           style={{
@@ -216,12 +212,6 @@ function Home() {
           >
             <UilReact size={70} color={"#fed9da"} />
           </animated.div>
-          {/* <div style={{ mixBlendMode: "soft-light" }}>
-            <UilCss3Simple size={60} color={"#fed9da"} />
-          </div>
-          <div style={{ mixBlendMode: "soft-light" }}>
-            <UilReact size={60} color={"#fed9da"} />
-          </div> */}
         </div>
       </div>
 
@@ -230,8 +220,6 @@ function Home() {
         style={{
           display: "flex",
           flexDirection: "column",
-          // justifyContent: "space-evenly",
-          // height: "90vh",
         }}
       >
         <div
@@ -248,7 +236,7 @@ function Home() {
           <div className="home__data">
             <div className="home__heading">
               <h1 className="home__title intergralCF__font">
-                {`Hi, I'am Jai`.toUpperCase()}
+                {`Hi, I'm Jai`.toUpperCase()}
               </h1>
               <h3 className="home__subtitle intergralCF__font">
                 {`Frontend developer`.toUpperCase()}
@@ -310,7 +298,7 @@ function Home() {
             {/*<Blob />*/}
             <div className="home__imgDiv">
               {/* <UserSvgImg className="home__blob" /> */}
-              <img src="./img/home.svg" alt="" className="home__img" />
+              <img src="./img/home3D.svg" alt="" className="home__img" />
             </div>
           </div>
         </div>
