@@ -3,10 +3,6 @@ import UserSvgImg from "./UserSvgImg.js";
 import "./Home.css";
 import "../App.css";
 
-// import Blob from "./Blob.js";
-import { UilLinkedinAlt } from "@iconscout/react-unicons";
-import { UilGithubAlt } from "@iconscout/react-unicons";
-import { UilInstagram } from "@iconscout/react-unicons";
 import { UilMessage } from "@iconscout/react-unicons";
 import { UilMouseAlt } from "@iconscout/react-unicons";
 import { UilArrowDown } from "@iconscout/react-unicons";
@@ -125,6 +121,7 @@ function Home() {
         //   style={Object.assign({ overflow: "hidden" }, props)}
         //   className="home__overlay"
         // ></animated.div>
+
         <div style={{ height: !overlay && hgt }} className="home__overlay">
           <div className="home__data">
             <div className="home__heading">
@@ -247,7 +244,8 @@ function Home() {
               quality work.
             </p>
             <a href="#contact" className="button button--flex">
-              Contact Me <UilMessage size="1.25rem" className="button__icon" />
+              Contact Me
+              <UilMessage size="1.25rem" className="button__icon" />
             </a>
           </div>
 
@@ -258,44 +256,6 @@ function Home() {
               justifyContent: "space-evenly",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-evenly",
-                visibility: "hidden",
-              }}
-              className="home__social"
-            >
-              <a
-                href="https://www.linkedin.com/in/jai-chaudhary-960a1b205"
-                className="home__social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <UilLinkedinAlt color={"#fed9da"} />
-              </a>
-
-              <a
-                href="https://github.com/jaichaudhary"
-                className="home__social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <UilGithubAlt color={"#fed9da"} />
-              </a>
-
-              <a
-                href="https://www.instagram.com/jaichaudhary___/"
-                className="home__social-icon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <UilInstagram color={"#fed9da"} />
-              </a>
-            </div>
-
-            {/*<Blob />*/}
             <div className="home__imgDiv">
               {/* <UserSvgImg className="home__blob" /> */}
               <img src="./img/home3D.svg" alt="" className="home__img" />
