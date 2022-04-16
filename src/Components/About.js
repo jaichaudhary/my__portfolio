@@ -16,8 +16,9 @@ function About() {
 
           <div className="about__data">
             <p className="about__description">
-              Web developer, with good knowledge and bit of experience, working
-              in web technologies and Ui/Ux design, delivering quality work
+              Web & Mobile developer, with good knowledge and bit of experience,
+              working in web technologies and Ui/Ux design, delivering quality
+              work
             </p>
             <div className="about__info">
               <div>
@@ -45,7 +46,7 @@ function About() {
             <div className="about__buttons">
               <a
                 download=""
-                href="./pdf/Jai's_May_2021_Resume.pdf"
+                href="./pdf/Jai_Apr_2022_Resume.pdf"
                 className="button button--flex"
               >
                 Download CV
