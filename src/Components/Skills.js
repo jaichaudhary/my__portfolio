@@ -87,7 +87,7 @@ function Skills() {
                     <span className="skills__number">70%</span>
                   </div>
                   <div className="skills__bar">
-                    <span className="skills__percentage skills__react"></span>
+                    <span className="skills__percentage skills__native"></span>
                   </div>
                 </div>
               </div>

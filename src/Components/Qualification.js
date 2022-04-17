@@ -54,13 +54,13 @@ function Qualification() {
               {/*================= Qualification 1 ===================*/}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">High School</h3>
+                  <h3 className="qualification__title">B.Tech (ECE)</h3>
                   <span className="qualification__subtitle">
-                    Aligarh - Brilliant Public School
+                    Delhi - AIACT&R
                   </span>
                   <div className="qualification__calendar">
                     <UilCalendarAlt size="0.75rem" />
-                    2014-2015
+                    2018-2021
                   </div>
                 </div>
 
@@ -92,13 +92,13 @@ function Qualification() {
               {/*================= Qualification 3 ===================*/}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">B.Tech (ECE)</h3>
+                  <h3 className="qualification__title">High School</h3>
                   <span className="qualification__subtitle">
-                    Delhi - AIACT&R
+                    Aligarh - Brilliant Public School
                   </span>
                   <div className="qualification__calendar">
                     <UilCalendarAlt size="0.75rem" />
-                    2018-2021
+                    2014-2015
                   </div>
                 </div>
 
@@ -115,11 +115,15 @@ function Qualification() {
               {/*================= Qualification 1 ===================*/}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Intern</h3>
-                  <span className="qualification__subtitle">DMRC - Delhi</span>
+                  <h3 className="qualification__title">
+                    Software Developer - React JS
+                  </h3>
+                  <span className="qualification__subtitle">
+                    Webileapps - Hyderabad
+                  </span>
                   <div className="qualification__calendar">
                     <UilCalendarAlt size="0.75rem" />
-                    06/2018 - 07/2019
+                    06/2021 - Present
                   </div>
                 </div>
 
@@ -153,15 +157,11 @@ function Qualification() {
               {/*================= Qualification 3 ===================*/}
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">
-                    Software Development Intern
-                  </h3>
-                  <span className="qualification__subtitle">
-                    Webileapps - Hyderabad
-                  </span>
+                  <h3 className="qualification__title">Intern</h3>
+                  <span className="qualification__subtitle">DMRC - Delhi</span>
                   <div className="qualification__calendar">
                     <UilCalendarAlt size="0.75rem" />
-                    06/2021 - Present
+                    06/2018 - 07/2019
                   </div>
                 </div>
 

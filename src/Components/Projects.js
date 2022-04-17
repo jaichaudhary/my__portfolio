@@ -24,8 +24,7 @@ export default function Projects() {
     },
     {
       title: "Excel_file Reader",
-      description: `- In this project, we can add an excel file, the heading of excel will come on the left and we can drag & drop the heading one by one and you will be able to see the table of those dragged headings.
-        - Chart is also included but you have to use "Test excel file" for that that is included in "readme.md" file in Github repo.`,
+      description: `In this project, we can add an excel file, the heading of excel will come on the left and we can drag & drop the heading one by one and you will be able to see the table of those dragged headings. Chart is also included but you have to use "Test excel file" for that that is included in "readme.md" file in Github repo.`,
       skills: ["HTML", "CSS", "JavaScript", "React", "ChartJS", "Drag & Drop"],
       image: "excelFile__reader",
       githubUrl: "https://github.com/jaichaudhary/excel-fileReader",
@@ -61,7 +60,7 @@ export default function Projects() {
     {
       title: "Poll Survey UI",
       description:
-        "TThis project shows the user interface of Polls, Surveys, Quiz inside a website.",
+        "This project shows the user interface of Polls, Surveys, Quiz inside a website.",
       skills: ["HTML", "CSS", "JavaScript"],
       image: "pollSurvey__image",
       githubUrl: "https://github.com/jaichaudhary/poll-react",
