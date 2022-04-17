@@ -26,8 +26,9 @@ function Footer() {
           flexDirection: "row",
           gap: 10,
           //   backgroundColor: "yellow",
-          marginBottom: 35,
+          marginBottom: 40,
           marginTop: 5,
+
           // justifyContent: "space-evenly",
           // visibility: "hidden",
         }}
