@@ -6,6 +6,15 @@ import "./Projects.css";
 export default function Projects() {
   const obj = [
     {
+      title: "React-Native-Dropdown (NPM Package)",
+      description:
+        "A React Native dropdown component easy to customize for both iOS and Android.",
+      skills: ["HTML", "CSS", "JavaScript", "React Native"],
+      image: "npm__image",
+      githubUrl: "https://github.com/jaichaudhary/react_native_dropdown",
+      url: "https://www.npmjs.com/package/@jaichaudhary/react_native_dropdown",
+    },
+    {
       title: "Youtube Clone",
       description:
         "The project includes search functionality in which one can search any keyword just like youtube and get the output.",
