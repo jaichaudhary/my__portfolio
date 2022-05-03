@@ -1,0 +1,27 @@
+.contact {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contact__desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .contact__para {
+    width: 400px;
+  }
+}

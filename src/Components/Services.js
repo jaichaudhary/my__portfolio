@@ -21,7 +21,7 @@ export default function Services() {
         >
           <div>
             <UilWebGrid className="services__icon" />
-            <h3 class="services_title">
+            <h3 className="services_title">
               Ui/Ux <br /> Designer
             </h3>
           </div>
@@ -56,7 +56,7 @@ export default function Services() {
         >
           <div>
             <UilArrow className="services__icon" />
-            <h3 class="services_title">
+            <h3 className="services_title">
               Frontend <br /> Developer
             </h3>
           </div>
@@ -91,7 +91,7 @@ export default function Services() {
         >
           <div>
             <UilPen className="services__icon" />
-            <h3 class="services_title">
+            <h3 className="services_title">
               Backend <br /> Developer
             </h3>
           </div>

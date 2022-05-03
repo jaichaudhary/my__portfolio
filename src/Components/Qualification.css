@@ -62,3 +62,27 @@
 .qualification__active {
   color: var(--first-color);
 }
+
+@media screen and (min-width: 768px) {
+  .qualification__tabs {
+    justify-content: center;
+  }
+  .qualification__button {
+    margin: 0 var(--mb-1);
+  }
+  .qualification__sections {
+    grid-template-columns: 0.5fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .qualification__tabs {
+    justify-content: center;
+  }
+  .qualification__button {
+    margin: 0 var(--mb-1);
+  }
+  .qualification__sections {
+    grid-template-columns: 0.8fr;
+  }
+}

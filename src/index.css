@@ -1,13 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "IntegralCF";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "IntegralCF";
+  src: local("IntegralCF"),
+    url("./fonts/Webfont/IntegralCF-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  /* src: url("./fonts/OTF/IntegralCF-ExtraBold.otf") format("otf"),
+    url("./fonts/Webfont/IntegralCF-ExtraBold.eot") format("embedded-opentype"),
+    url("./fonts/Webfont/IntegralCF-ExtraBold.woff") format("woff"),
+    url("./fonts/Webfont/IntegralCF-ExtraBold.woff2") format("woff2"),
+    url("./fonts/Webfont/IntegralCF-ExtraBold.ttf") format("truetype"); */
 }

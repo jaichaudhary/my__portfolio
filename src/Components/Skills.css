@@ -78,7 +78,11 @@
 }
 
 .skills__react {
-  width: 60%;
+  width: 70%;
+}
+
+.skills__native {
+  width: 70%;
 }
 
 .skills__c {
@@ -105,4 +109,9 @@
 
 .skills__arrow {
   transform: rotate(-180deg);
+}
+
+.skills__wrapper {
+  display: flex;
+  justify-content: center;
 }

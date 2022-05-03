@@ -15,8 +15,9 @@ function Skills() {
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">My technical level</span>
 
-      <div className="skills__container container grid">
-        <div>
+      <div className="skills__wrapper">
+        <div className="skills__container container grid">
+          {/* <div> */}
           {/*=====================Skills 1======================*/}
           <div className="skills__content skills__open">
             <div
@@ -74,10 +75,19 @@ function Skills() {
                 <div className="skills__data">
                   <div className="skills__titles">
                     <h3 className="skills__name">React</h3>
-                    <span className="skills__number">60%</span>
+                    <span className="skills__number">70%</span>
                   </div>
                   <div className="skills__bar">
                     <span className="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+                <div className="skills__data">
+                  <div className="skills__titles">
+                    <h3 className="skills__name">React Native</h3>
+                    <span className="skills__number">70%</span>
+                  </div>
+                  <div className="skills__bar">
+                    <span className="skills__percentage skills__native"></span>
                   </div>
                 </div>
               </div>
@@ -121,7 +131,7 @@ function Skills() {
                 <div className="skills__data">
                   <div className="skills__titles">
                     <h3 className="skills__name">Node JS</h3>
-                    <span className="skills__number">55%</span>
+                    <span className="skills__number">40%</span>
                   </div>
                   <div className="skills__bar">
                     <span className="skills__percentage skills__node"></span>
@@ -167,6 +177,7 @@ function Skills() {
               </div>
             )}
           </div>
+          {/* </div> */}
         </div>
       </div>
     </section>
