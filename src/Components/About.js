@@ -46,7 +46,7 @@ function About() {
             <div className="about__buttons">
               <a
                 download=""
-                href="./pdf/Jai_Apr_2022_Resume.pdf"
+                href="./pdf/Jai's_Resume_Apr_2022.pdf"
                 className="button button--flex"
               >
                 Download CV
