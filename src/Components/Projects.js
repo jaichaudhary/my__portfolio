@@ -55,7 +55,7 @@ export default function Projects() {
       skills: ["HTML", "CSS", "JavaScript", "React", "Flickr API"],
       image: "search__pic",
       githubUrl: "https://github.com/jaichaudhary/search-pic",
-      url: "http://boringstudy.me/search-pic/",
+      url: "http://jaichaudhary.github.io/search-pic/",
     },
     {
       title: "Homejam CLone",
