@@ -46,7 +46,7 @@ export default function Projects() {
       skills: ["HTML", "CSS", "JavaScript", "React", "React Router"],
       image: "airbnb__image",
       githubUrl: "https://github.com/jaichaudhary/Airbnb-clone",
-      url: "https://airbnb-clone-inky.vercel.app/",
+      url: "https://airbnb-clone-e70ifyf4y-jaichaudhary.vercel.app/",
     },
     {
       title: "Search Pic",
@@ -55,7 +55,7 @@ export default function Projects() {
       skills: ["HTML", "CSS", "JavaScript", "React", "Flickr API"],
       image: "search__pic",
       githubUrl: "https://github.com/jaichaudhary/search-pic",
-      url: "http://boringstudy.me/search-pic/",
+      url: "https://jaichaudhary.github.io/search-pic/",
     },
     {
       title: "Homejam CLone",
