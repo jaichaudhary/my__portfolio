@@ -11,8 +11,46 @@ export default function Projects() {
         "A React Native dropdown component easy to customize for both iOS and Android.",
       skills: ["HTML", "CSS", "JavaScript", "React Native"],
       image: "npm__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/react_native_dropdown",
       url: "https://www.npmjs.com/package/@jaichaudhary/react_native_dropdown",
+    },
+    {
+      title: "Call Scheduler UI",
+      description:
+        "Its a call scheduler, in which you can schedule the call for the reminder in the given time slot.",
+      skills: ["HTML", "CSS", "JavaScript", "ReactJS"],
+      image: "call__scheduler",
+      gitHub: true,
+      githubUrl: "https://github.com/jaichaudhary/call_scheduler",
+      url: "https://call-scheduler.vercel.app/",
+    },
+    {
+      title: "Unplank (Consumer and Merchant app)",
+      description:
+        "Unplank is a frictionless point-of-sale interface that empowers merchants to acquire customers and take payment in-store, free of interchange fees and platform commissions.",
+      skills: ["HTML", "CSS", "JavaScript", "React Native", "Redux"],
+      image: "unplank",
+      gitHub: false,
+      url: "https://www.linkedin.com/company/unplank/",
+    },
+    {
+      title: "Kfinkart Distributor App",
+      description:
+        "Now, become a smart financial distributor with KFintech's KFinKart. Access the universe of KFintech serviced mutual funds on your smart phone. No more running around with documents or getting stuck with lengthy processes while initiating mutual fund transactions for your customers.",
+      skills: ["HTML", "CSS", "JavaScript", "React Native", "Redux"],
+      image: "kfin",
+      gitHub: false,
+      url: "https://play.google.com/store/apps/details?id=com.karvydistributor",
+    },
+    {
+      title: "Crimson Healthcare App",
+      description:
+        "Crimson Healthcare mobile app helps ostomates schedule their stool evacuations while using Crimson's innovative ostomy appliances. Additionally, ostomates can reorder products without any hassle and share their feedback with us.",
+      skills: ["HTML", "CSS", "JavaScript", "React Native", "Redux"],
+      image: "crimson",
+      gitHub: false,
+      url: "https://play.google.com/store/apps/details?id=com.crimsonhealth",
     },
     {
       title: "Youtube Clone",
@@ -20,6 +58,7 @@ export default function Projects() {
         "The project includes search functionality in which one can search any keyword just like youtube and get the output.",
       skills: ["HTML", "CSS", "JavaScript", "React", "YouTube API"],
       image: "youtube__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/Youtube-clone",
       url: "https://jaichaudhary.github.io/Youtube-clone/",
     },
@@ -28,6 +67,7 @@ export default function Projects() {
       description: `In this project, you create your own token and you can check the balance or transfer it into your different accounts. You can also import existing tokens and transfer or check the balance if you are an owner of that token.`,
       skills: ["Hardhat", "Solidity", "web3.js", "React", "Material UI"],
       image: "create__ether",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/erc20_project",
       url: "https://erc20-project.vercel.app/",
     },
@@ -36,6 +76,7 @@ export default function Projects() {
       description: `In this project, we can add an excel file, the heading of excel will come on the left and we can drag & drop the heading one by one and you will be able to see the table of those dragged headings. Chart is also included but you have to use "Test excel file" for that that is included in "readme.md" file in Github repo.`,
       skills: ["HTML", "CSS", "JavaScript", "React", "ChartJS", "Drag & Drop"],
       image: "excelFile__reader",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/excel-fileReader",
       url: "https://excel-file-reader.vercel.app/",
     },
@@ -45,6 +86,7 @@ export default function Projects() {
         "The Project includes Date Picker and how many person to stay functionality, and once you click on Done, then you are redirected to the search page.",
       skills: ["HTML", "CSS", "JavaScript", "React", "React Router"],
       image: "airbnb__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/Airbnb-clone",
       url: "https://airbnb-clone-e70ifyf4y-jaichaudhary.vercel.app/",
     },
@@ -54,6 +96,7 @@ export default function Projects() {
         "The Project includes the functionality of image search when we type anything in the search bar and we can also view them in a modal when we click on the image, and it also has a functionality of showing recent searches.",
       skills: ["HTML", "CSS", "JavaScript", "React", "Flickr API"],
       image: "search__pic",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/search-pic",
       url: "https://jaichaudhary.github.io/search-pic/",
     },
@@ -63,6 +106,7 @@ export default function Projects() {
         "This project is the clone of myhomejam.com Homepage, User Interface is fully responsive.",
       skills: ["HTML", "CSS", "JavaScript", "React"],
       image: "homejam__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/homejam-react",
       url: "https://jaichaudhary.github.io/homejam-react",
     },
@@ -72,6 +116,7 @@ export default function Projects() {
         "This project shows the user interface of Polls, Surveys, Quiz inside a website.",
       skills: ["HTML", "CSS", "JavaScript"],
       image: "pollSurvey__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/poll-react",
       url: "https://jaichaudhary.github.io/poll-react/",
     },
@@ -81,6 +126,7 @@ export default function Projects() {
         "This project primarily focuses on the availability of the previous year's question papers and answers for the students of B.Tech and Diploma.",
       skills: ["HTML", "CSS", "JavaScript"],
       image: "boringStudy__image",
+      gitHub: true,
       githubUrl: "https://github.com/jaichaudhary/boringstudy",
       url: "https://boringstudy.vercel.app/",
     },
@@ -146,14 +192,17 @@ export default function Projects() {
                 </div>
 
                 <div className="projects__link">
-                  <div
-                    onClick={() => {
-                      window.open(item.githubUrl, "_blank");
-                    }}
-                    className="projects__linkTab"
-                  >
-                    <UilGithubAlt />
-                  </div>
+                  {item.gitHub && (
+                    <div
+                      onClick={() => {
+                        window.open(item.githubUrl, "_blank");
+                      }}
+                      className="projects__linkTab"
+                    >
+                      <UilGithubAlt />
+                    </div>
+                  )}
+
                   <div
                     onClick={() => {
                       window.open(item.url, "_blank");
